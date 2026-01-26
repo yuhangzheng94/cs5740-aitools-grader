@@ -1,0 +1,6 @@
+[submodule "aitools-canvas-api"]
+	path = aitools-canvas-api
+	url = https://github.com/nowucca/aitools-canvas-api.git
+[submodule "aitools-discussion-grader"]
+	path = aitools-discussion-grader
+	url = https://github.com/nowucca/aitools-discussion-grader.git
