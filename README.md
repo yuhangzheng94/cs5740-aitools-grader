@@ -2,6 +2,16 @@
 
 ***Note:** This project is largely adapted from [Canvas Local Speed Grader](https://github.com/nowucca/aitools-canvas-api) and [Discussion Grader](https://github.com/nowucca/aitools-discussion-grader), both of which were developed by [Steven Atkinson](https://www.linkedin.com/in/satkinson/).*
 
+---
+
+- [Setup](#setup)
+    - [Prerequisite](#prerequisite)
+    - [Steps](#steps)
+- [Usage](#usage)
+    - [Dry Run (Single Student)](#dry-run-single-student)
+    - [Dry Run (Entire Class)](#dry-run-entire-class)
+    - [View Grading Data](#view-grading-data)
+
 ## Setup
 
 ### Prerequisite
@@ -62,13 +72,11 @@ and for the **discussion assignment** you'd like to grade:
 
 ## Usage
 
-Change the current directory to `/aitools-canvas-api`:
+Make sure the current directory is set to `/aitools-canvas-api`:
 
 ```bash
 cd aitools-canvas-api
 ```
-
-For dry run, nothing will be posted back to Canvas; everything stays in your local device.
 
 ### Dry Run (Single Student)
 
@@ -84,6 +92,8 @@ The only different from dry running on a single student is that `--only-student`
 ```bash
 uv run python canvas_speedgrader.py --course-id $COURSE_ID --discussion-id $DISCUSSION_ID --grader ./uv_grader_wrapper.py --output results.json
 ```
+
+**Note:** For dry run, nothing will be posted back to Canvas; everything stays in your local device.
 
 ### View Grading Data
 
