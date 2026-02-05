@@ -1,6 +1,8 @@
 [submodule "aitools-canvas-api"]
 	path = aitools-canvas-api
 	url = https://github.com/yuhangzheng94/aitools-canvas-api.git
+	branch = v1
 [submodule "aitools-discussion-grader"]
 	path = aitools-discussion-grader
 	url = https://github.com/yuhangzheng94/aitools-discussion-grader.git
+	branch = v1
