@@ -78,6 +78,17 @@ Make sure the current directory is set to `/aitools-canvas-api`:
 cd aitools-canvas-api
 ```
 
+### Configure Assignment Specs
+
+Currently, points possible and minimum words requirement are hard-coded. 
+
+To change these settings, go to Lines 72-73 of `aitools-discussion-grader/discussion-grader/canvas_speedgrader.py`.
+
+```python
+points_possible = discussion_data.get('points_possible', 8)
+min_words = discussion_data.get('min_words', 100)
+```
+
 ### Dry Run (Single Student)
 
 ```bash
